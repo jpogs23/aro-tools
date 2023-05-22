@@ -318,7 +318,8 @@ Please execute the script on the current directory: /home/jusantia/openshift/tes
 ```
 
 4. Banner command not found. 
-   The script will still proceed even without the banner headings and endings.
+   The script will still proceed even without the banner binary.
+   To get around this you need to install that rpm package.
    
 ```sh
 [cloud_user@3e51134a661c aro-tools]$ ./aro-must-gather.sh 
