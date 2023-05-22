@@ -1,5 +1,5 @@
 # ARO Must Gather Tool
-## This script was made for ARO clusters to capture information needed by CEE.
+## This script was made for ARO clusters to capture information needed by CEE
 
 ## Description
 This script performs various operations using the 'oc' command-line tool and wraps the default 'oc adm must-gather' command.
@@ -13,7 +13,7 @@ sudo yum install -y ncompress tar gzip
 ```
 oc-cli tools needs to be installed as well by following this [guide](https://docs.openshift.com/container-platform/4.13/cli_reference/openshift_cli/getting-started-cli.html).
 
-## How to install and run.
+## How to install and run
 You can run the script by downloading from this repo. 
 As you can see from the example below, we haven't completed the prerequisites and the script detected that there's no oc-cli installed so it will not proceed with the collection.
 
@@ -47,7 +47,7 @@ Please install the 'oc' command-line tool and make sure it is accessible.
 
 ```
 
-## Actual Run Completed ( truncated )
+## Sample actual run Completed ( truncated )
 An example of the actual run. 
 
 ```sh
