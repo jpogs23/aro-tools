@@ -5,13 +5,15 @@
 This script performs various operations using the 'oc' command-line tool and wraps the default 'oc adm must-gather' command.
 
 ## Prerequisites
-Install the dependencies before using. 
+Install the dependencies before using the script.
 You can either choose gzip or compress since the script will choose which one to use during the run.
 
 ```sh
 sudo yum install -y ncompress tar gzip
 ```
 oc-cli tools needs to be installed as well by following this [guide](https://docs.openshift.com/container-platform/4.13/cli_reference/openshift_cli/getting-started-cli.html).
+
+And of course you need to have your terminal connected to your OpenShift cluster :).
 
 ## How to install and run
 You can run the script by downloading from this repo. 
