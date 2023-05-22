@@ -222,11 +222,9 @@ Thank you for choosing Redhat Support!
 ## Sample Errors
 Sample errors that you might encounter.
 
-```sh
-
 1. You are not connected to your cluster. 
-Before the script execution you need to have a terminal that is connected to your openshift cluster.
 
+```sh
 [jusantia@jp-machine test_mg ]$ ./aro-must-gather.sh 
 
 
@@ -251,10 +249,11 @@ Error from server (Forbidden): nodes is forbidden: User "system:anonymous" canno
 ########################################################################################
 Sufficient disk space available. The filesystem has at least 1GB to proceed.
 ########################################################################################
+```
 
 2. Your filesystem has only 500MB or less space. 
 You need to perform cleanup or move the script to a different filesystem and execute from their if that filesystem has enough space.
-
+```sh
 ==== XXXXXXX-66wlp-worker-eastus2-2vfmf ====
 Allocated resources:
   (Total limits may be over 100 percent, i.e., overcommitted.)
