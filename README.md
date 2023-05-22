@@ -289,6 +289,31 @@ It is advisable to run the 'oc adm must-gather' with at least 1GB of free filesy
 Press Ctrl+C to cancel the script then perform a cleanup so you can meet the requirements or press Enter to proceed at your own risk: 
 
 ```
+3. The script was run on a different directory where it was installed.
+```sh
+[jusantia@jp-machine openshift ]$ ./test_mg/aro-must-gather.sh 
+
+#     #     #     #     #  #     #     #     #        
+##   ##    # #    ##    #  #     #    # #    #        
+# # # #   #   #   # #   #  #     #   #   #   #        
+#  #  #  #     #  #  #  #  #     #  #     #  #        
+#     #  #######  #   # #  #     #  #######  #        
+#     #  #     #  #    ##  #     #  #     #  #        
+#     #  #     #  #     #   #####   #     #  #######  
+
+
+#######     #      #####   #    #   #####   
+   #       # #    #     #  #   #   #     #  
+   #      #   #   #        #  #    #        
+   #     #     #   #####   ###      #####   
+   #     #######        #  #  #          #  
+   #     #     #  #     #  #   #   #     #  
+   #     #     #   #####   #    #   #####   
+
+Starting manual tasks gatherer
+
+Please execute the script on the current directory: /home/jusantia/openshift/test_mg
+```
 
 
 ## License
