@@ -317,6 +317,15 @@ Starting manual tasks gatherer
 Please execute the script on the current directory: /home/jusantia/openshift/test_mg
 ```
 
+4. Banner command not found. 
+   The script will still proceed even without the banner headings and endings.
+   
+```sh
+[cloud_user@3e51134a661c aro-tools]$ ./aro-must-gather.sh 
+./aro-must-gather.sh: line 23: banner: command not found
+Starting manual tasks gatherer
+```
+
 
 ## License
 This tool is free to use. 
