@@ -53,23 +53,23 @@ Please install the 'oc' command-line tool and make sure it is accessible.
 An example of the actual run. 
 
 ```sh
-[jusantia@jp-machine test_mg ]$ ls -lart
+[xxxxxx@jp-machine test_mg ]$ ls -lart
 total 885344
--rwxr-xr-x. 1 jusantia jusantia      7256 May 21 23:43 aro-must-gather.sh
-drwxrwxr-x. 7 jusantia jusantia       125 May 22 00:14 ..
-drwxrwxr-x. 3 jusantia jusantia       174 May 22 00:20 must-gather.local.6840621770613724147
--rw-rw-r--. 1 jusantia jusantia 210108159 May 22 00:20 must-gather.local.6840621770613724147.tar.Z
--rw-rw-r--. 1 jusantia jusantia      5819 May 22 00:20 must-gather-manual-20230522-0014.txt
-drwxrwxr-x. 3 jusantia jusantia       174 May 22 14:38 must-gather.local.6364959399232345923
--rw-rw-r--. 1 jusantia jusantia 231116931 May 22 14:38 must-gather.local.6364959399232345923.tar.Z
--rw-rw-r--. 1 jusantia jusantia      5819 May 22 14:38 must-gather-manual-20230522-1433.txt
-drwxrwxr-x. 3 jusantia jusantia       174 May 22 15:11 must-gather.local.5820856935880256062
--rw-rw-r--. 1 jusantia jusantia 230226429 May 22 15:12 must-gather.local.5820856935880256062.tar.Z
--rw-rw-r--. 1 jusantia jusantia      5819 May 22 15:12 must-gather-manual-20230522-1508.txt
-drwxrwxr-x. 3 jusantia jusantia       174 May 22 20:20 must-gather.local.3957495381829211660
--rw-rw-r--. 1 jusantia jusantia 235088801 May 22 20:20 must-gather.local.3957495381829211660.tar.Z
-drwxrwxr-x. 6 jusantia jusantia      4096 May 22 20:20 .
--rw-rw-r--. 1 jusantia jusantia      5819 May 22 20:20 must-gather-manual-20230522-2014.txt
+-rwxr-xr-x. 1 xxxxxx xxxxxx      7256 May 21 23:43 aro-must-gather.sh
+drwxrwxr-x. 7 xxxxxx xxxxxx       125 May 22 00:14 ..
+drwxrwxr-x. 3 xxxxxx xxxxxx       174 May 22 00:20 must-gather.local.6840621770613724147
+-rw-rw-r--. 1 xxxxxx xxxxxx 210108159 May 22 00:20 must-gather.local.6840621770613724147.tar.Z
+-rw-rw-r--. 1 xxxxxx xxxxxx      5819 May 22 00:20 must-gather-manual-20230522-0014.txt
+drwxrwxr-x. 3 xxxxxx xxxxxx       174 May 22 14:38 must-gather.local.6364959399232345923
+-rw-rw-r--. 1 xxxxxx xxxxxx 231116931 May 22 14:38 must-gather.local.6364959399232345923.tar.Z
+-rw-rw-r--. 1 xxxxxx xxxxxx      5819 May 22 14:38 must-gather-manual-20230522-1433.txt
+drwxrwxr-x. 3 xxxxxx xxxxxx       174 May 22 15:11 must-gather.local.5820856935880256062
+-rw-rw-r--. 1 xxxxxx xxxxxx 230226429 May 22 15:12 must-gather.local.5820856935880256062.tar.Z
+-rw-rw-r--. 1 xxxxxx xxxxxx      5819 May 22 15:12 must-gather-manual-20230522-1508.txt
+drwxrwxr-x. 3 xxxxxx xxxxxx       174 May 22 20:20 must-gather.local.3957495381829211660
+-rw-rw-r--. 1 xxxxxx xxxxxx 235088801 May 22 20:20 must-gather.local.3957495381829211660.tar.Z
+drwxrwxr-x. 6 xxxxxx xxxxxx      4096 May 22 20:20 .
+-rw-rw-r--. 1 xxxxxx xxxxxx      5819 May 22 20:20 must-gather-manual-20230522-2014.txt
 
 [XXXXXXXX@jp-machine test_mg ]$ ./aro-must-gather.sh 
 
@@ -203,8 +203,8 @@ compress is available on the system.
 compress is available on the system.
 Using compress for compression.
 ########################################################################################
--rw-rw-r--. 1 jusantia jusantia      5673 May 22 20:14 must-gather-manual-20230522-2014.txt
--rw-rw-r--. 1 jusantia jusantia 235088801 May 22 20:20 must-gather.local.3957495381829211660.tar.Z
+-rw-rw-r--. 1 xxxxxx xxxxxx      5673 May 22 20:14 must-gather-manual-20230522-2014.txt
+-rw-rw-r--. 1 xxxxxx xxxxxx 235088801 May 22 20:20 must-gather.local.3957495381829211660.tar.Z
 ########################################################################################
 Script execution ended at: Mon May 22 20:20:51 NZST 2023
 
@@ -227,7 +227,7 @@ Sample errors that you might encounter.
 1. You are not connected to your cluster. Before the script execution you need to have a terminal that is connected to your openshift cluster.
 
 ```sh
-[jusantia@jp-machine test_mg ]$ ./aro-must-gather.sh 
+[xxxxxx@jp-machine test_mg ]$ ./aro-must-gather.sh 
 
 
 Starting manual tasks gatherer
@@ -291,9 +291,9 @@ Press Ctrl+C to cancel the script then perform a cleanup so you can meet the req
 ```
 3. The script was run on a different directory where it was installed.
 ```sh
-[jusantia@jp-machine openshift ]$ pwd
-/home/jusantia/openshift
-[jusantia@jp-machine openshift ]$ ./test_mg/aro-must-gather.sh 
+[xxxxxx@jp-machine openshift ]$ pwd
+/home/xxxxxx/openshift
+[xxxxxx@jp-machine openshift ]$ ./test_mg/aro-must-gather.sh 
 
 #     #     #     #     #  #     #     #     #        
 ##   ##    # #    ##    #  #     #    # #    #        
@@ -314,7 +314,7 @@ Press Ctrl+C to cancel the script then perform a cleanup so you can meet the req
 
 Starting manual tasks gatherer
 
-Please execute the script on the current directory: /home/jusantia/openshift/test_mg
+Please execute the script on the current directory: /home/xxxxxx/openshift/test_mg
 ```
 
 4. Banner command not found. 
