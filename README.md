@@ -291,6 +291,8 @@ Press Ctrl+C to cancel the script then perform a cleanup so you can meet the req
 ```
 3. The script was run on a different directory where it was installed.
 ```sh
+[jusantia@jp-machine openshift ]$ pwd
+/home/jusantia/openshift
 [jusantia@jp-machine openshift ]$ ./test_mg/aro-must-gather.sh 
 
 #     #     #     #     #  #     #     #     #        
