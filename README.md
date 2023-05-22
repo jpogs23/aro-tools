@@ -222,7 +222,7 @@ Thank you for choosing Redhat Support!
 ## Sample Errors
 Sample errors that you might encounter.
 
-1. You are not connected to your cluster. 
+1. You are not connected to your cluster. Before the script execution you need to have a terminal that is connected to your openshift cluster.
 
 ```sh
 [jusantia@jp-machine test_mg ]$ ./aro-must-gather.sh 
