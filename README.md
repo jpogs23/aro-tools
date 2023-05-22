@@ -219,6 +219,73 @@ Thank you for choosing Redhat Support!
 ########################################################################################
 ```
 
+## Sample Errors
+Sample errors that you might encounter.
+
+```sh
+
+1. You are not connected to your cluster. Before the script execution you need to have a terminal that is connected to your openshift cluster.
+[jusantia@jp-machine test_mg ]$ ./aro-must-gather.sh 
+
+
+Starting manual tasks gatherer
+
+########################################################################################
+Script execution started at: Mon May 22 23:34:08 NZST 2023
+########################################################################################
+                                  oc get pdb -A
+########################################################################################
+Error from server (Forbidden): poddisruptionbudgets.policy is forbidden: User "system:anonymous" cannot list resource "poddisruptionbudgets" in API group "policy" at the cluster scope
+WARNING: The 'oc get pdb -A' command failed.
+########################################################################################
+                                  oc adm top nodes
+########################################################################################
+error: Metrics API not available
+WARNING: The 'oc adm top nodes' command failed.
+########################################################################################
+                    oc describe node (allocations for worker nodes only)
+########################################################################################
+Error from server (Forbidden): nodes is forbidden: User "system:anonymous" cannot list resource "nodes" in API group "" at the cluster scope
+########################################################################################
+Sufficient disk space available. The filesystem has at least 1GB to proceed.
+########################################################################################
+
+2. Your filesystem has only 500MB or less space. You need to perform cleanup or move the script to a different filesystem and execute from their if that filesystem has enough space.
+
+==== XXXXXXX-66wlp-worker-eastus2-2vfmf ====
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                       Requests      Limits
+  --------                       --------      ------
+  cpu                            811m (23%)    650m (18%)
+  memory                         3388Mi (25%)  1500Mi (11%)
+  ephemeral-storage              0 (0%)        0 (0%)
+  hugepages-1Gi                  0 (0%)        0 (0%)
+  hugepages-2Mi                  0 (0%)        0 (0%)
+  attachable-volumes-azure-disk  0             0
+Events:
+
+==== XXXXXXX-66wlp-worker-eastus3-5kbtj ====
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                       Requests     Limits
+  --------                       --------     ------
+  cpu                            469m (13%)   650m (18%)
+  memory                         1298Mi (9%)  1500Mi (11%)
+  ephemeral-storage              0 (0%)       0 (0%)
+  hugepages-1Gi                  0 (0%)       0 (0%)
+  hugepages-2Mi                  0 (0%)       0 (0%)
+  attachable-volumes-azure-disk  0            0
+Events:
+
+########################################################################################
+WARNING: Your filesystem has less than 500MB of free space.
+It is advisable to run the 'oc adm must-gather' with at least 1GB of free filesystem.
+########################################################################################
+Press Ctrl+C to cancel the script then perform a cleanup so you can meet the requirements or press Enter to proceed at your own risk: 
+
+```
+
 
 ## License
 This tool is free to use. 
