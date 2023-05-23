@@ -3,6 +3,10 @@
 
 ## Description
 This script performs various operations using the 'oc' command-line tool and wraps the default 'oc adm must-gather' command.
+The script hasn't gone up to CERTIFICATION PROCESS YET so please use at your own risk.
+
+# IMPORTANT NOTE: 
+## This site is not official Red Hat documentation and is provided for informational purposes only. These guides may be experimental, proof of concept, or early adoption. Officially supported documentation is available at docs.openshift.com and access.redhat.com.
 
 ## Prerequisites
 Install the dependencies before using the script.
