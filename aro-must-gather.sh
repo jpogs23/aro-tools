@@ -79,6 +79,7 @@ check_disk_space() {
     echo "########################################################################################"
     echo "WARNING: Your filesystem has less than 500MB of free space."
     echo "It is advisable to run the 'oc adm must-gather' with at least 1GB of free filesystem."
+    echo "Starting 'oc adm must-gather' command with WARNINGS at $(date)."
     echo "########################################################################################"
 
     read -p "Press Ctrl+C to cancel the script then perform a cleanup so you can meet the requirements or press Enter to proceed at your own risk: " -r -s -t 20 response
@@ -93,6 +94,7 @@ check_disk_space() {
   else
     echo "########################################################################################"
     echo "Sufficient disk space available. The filesystem has at least 1GB to proceed."
+    echo "Starting 'oc adm must-gather' command at $(date)."
     echo "########################################################################################"
   fi
 }
