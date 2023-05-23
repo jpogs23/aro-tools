@@ -168,6 +168,7 @@ Events:                          <none>
 
 ########################################################################################
 Sufficient disk space available. The filesystem has at least 1GB to proceed.
+Starting 'oc adm must-gather' command at Sun May 21 22:36:12 NZST 2023
 ########################################################################################
 [must-gather      ] OUT Using must-gather plug-in image: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:3e6fd20863d0fd15a45340dffc1fa3812b4775e1b8d55a522a8e6e66453901c1
 When opening a support case, bugzilla, or issue please include the following summary data along with any other requested information:
